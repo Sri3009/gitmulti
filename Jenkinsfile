@@ -3,7 +3,13 @@ pipeline {
     stages {
         stage('checkout') {
             steps{
-      sh  'git branch: 'newchild', credentialsId: 'b5434cb7-8053-49b1-b93c-ae98f5c90c9f', url: 'git@github.com:Sri3009/gitmulti.git''
+               git url: "git@github.com:Sri3009/gitmulti.git",
+               credentialsId: '3025fff2-0d3f-429d-a074-5ee5ef792110',
+    branch: newtestbranch
+sh 'git tag -a testtag -m "testing file"'
+sh 'git merge newtestbranch'
+sh 'git commit -am "Merged newtestbranch branch to master'
+sh 'git push origin master'
             }    
             
         }
