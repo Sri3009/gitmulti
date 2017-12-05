@@ -9,6 +9,7 @@ steps {
   sh 'git tag -a newtag -m "to monitor committed changes"'
   sh 'git push https://github.com/Sri3009/gitmulti.git newtag'
 } 
+        }
         stage('end message'){
             steps{
                 sh 'pwd'
