@@ -11,11 +11,12 @@ pipeline {
   sh 'git branch'  
   sh 'git checkout child3'
   sh 'git checkout master'
-  sh 'touch mock1'
+  sh 'touch mock2'
   sh 'ls'
   sh 'git add .'
   sh 'git commit -am "This is a final commit"'
-  sh 'git tag -a final3 -m "to monitor changes"'
+  sh 'git tag -a final4 -m "to monitor changes"'
+  sh 'git pull --rebase'
   sh 'git push git@github.com:Sri3009/gitmulti.git master'
   }
         }
