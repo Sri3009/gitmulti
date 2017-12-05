@@ -13,7 +13,7 @@ pipeline {
         stage('end message'){
             steps{
                 sh 'pwd'
-                sh 'done'
+                sh 'echo "done"'
             }
             
         }
