@@ -6,7 +6,7 @@ pipeline {
   withCredentials([usernamePassword(credentialsId: '3025fff2-0d3f-429d-a074-5ee5ef792110', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
 
   sh 'git tag -a tagname -m "to monitor changes"'
-  sh 'git push origin tagname'
+  sh 'git push https://${Sri3009}:${Jersey@3009}@https://github.com tagname'
   }
         }
     }
