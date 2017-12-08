@@ -7,8 +7,8 @@ pipeline {
   sh 'git branch'
   sh 'git checkout child1'
   sh 'git checkout master'
-  sh 'git tag -a finalTag1 -m "to monitor changes"'
-  sh 'git push git@github.com:Sri3009/gitmulti.git finalTag1'
+  sh 'git tag -a finalTag5 -m "to monitor changes"'
+  sh 'git push git@github.com:Sri3009/gitmulti.git finalTag5'
   }
         }
     }
